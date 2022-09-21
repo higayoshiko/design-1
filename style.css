@@ -1,0 +1,244 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f1f6f9;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.6rem;
+}
+
+/* header */
+.container {
+  text-align: center;
+  margin: 10rem auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+
+li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 2rem;
+  color: #dd6824;
+  font-weight: 700;
+}
+
+.header-img {
+  position: relative;
+  max-width: 130rem;
+  height: 60rem;
+  margin: 5rem auto;
+  background-image: url(img/page-header-contact.jpg);
+  border-radius: 3rem;
+}
+
+.title {
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+}
+
+.title h1 {
+  font-size: 5rem;
+}
+
+.search-bar {
+  position: absolute;
+  bottom: -5rem;
+  left: 25rem;
+  height: 10rem;
+  width: 80rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 1rem;
+  border-radius: 1rem;
+  border: 1.5px solid rgba(0,0,0,.2);
+  font-size: 2.4rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
+}
+
+.search-bar label {
+  font-size: 2rem;
+  margin-left: 3rem;
+}
+
+.search-bar input {
+  font-size: 2rem;
+  border: none;
+  height: 9rem;
+}
+
+.search-bar button {
+  font-size: 2rem;
+  padding: 2.8rem 3rem;
+  border-radius: 1rem;
+  background-color: #F57328;
+  color: #fff;
+  border: 2px solid #dd6824;
+}
+
+i {
+  font-size: 2.5rem;
+  color: #F57328;
+}
+
+
+/* main */
+.cards-ctn {
+  display: flex;
+  justify-content: space-between;
+  max-width: 130rem;
+  margin: 25rem auto;
+}
+
+.card {
+    height: 40rem;
+    width: 40rem;
+    border-radius: .5rem;
+    position: relative;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
+
+.card--1 {
+  background-image: linear-gradient(to bottom,
+      rgba(39, 123, 192, .5), rgba(0, 0, 0, .7)),
+      url(img/offer-sidebar-bg.jpg);
+      background-size: cover;
+}
+
+.card--2 {
+  background-image: linear-gradient(to bottom,
+      rgba(39, 123, 192, .3), rgba(0, 0, 0, .7)),
+      url(img/tour-h6-bg-1.jpg);
+      background-size: cover;
+}
+
+.card--3 {
+  background-image: linear-gradient(to bottom,
+      rgba(39, 123, 192, .3), rgba(0, 0, 0, .7)),
+      url(img/tour-h6-thumb-2.jpg);
+      background-size: cover;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 1rem;
+  padding: 2rem;
+  color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+/* monthly */
+.monthly {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+  width: 120rem;
+  margin: 0 auto;
+}
+
+.monthly img {
+  height: 40rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
+
+.monthly-text {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 3rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .1);
+}
+
+.monthly h3 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #F57328;
+}
+
+.monthly h2 {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.monthly p {
+  margin-top: 5rem;
+  font-size: 1.8rem;
+  line-height: 2;
+}
+
+/* carousel */
+.carousel {
+  background-color: #EFEFEF;
+  height: 70rem;
+  margin: 32rem 0;
+}
+
+.carousel h2 {
+  font-size: 4rem;
+  padding: 5rem 0 10rem;
+}
+
+.carousel-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2rem;
+  margin: 0 10rem;
+}
+
+.carousel-img {
+  position: relative;
+  border-radius: 1rem;
+  height: 30rem;
+  width: 30rem;
+}
+
+.carousel img {
+  height: inherit;
+  border-radius: 1rem;
+}
+
+.carousel-img p {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #fff;
+  padding: .5rem 1rem;
+  color: #F57328;
+  font-weight:700;
+  border-radius: .5rem;
+  text-transform: uppercase;
+}
+
+.dots {
+  margin: 10rem 0;
+}
+
+.dots i {
+  font-size: 1.4rem;
+}
